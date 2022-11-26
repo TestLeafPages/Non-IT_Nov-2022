@@ -1,0 +1,145 @@
+Agenda
+======
+Agenda:
+======
+9 to 9.45      - Intoduction to java, class and main method
+9.45  to 10.00 - Classroom
+10.00 to 10.45 - Primitive Datatypes
+10.45 to 11.00 - classroom
+11.00 to 11.15 - Break
+11.15 to 12.15 - Method and Object reference
+12.15 to 12.35 - classroom
+12.30 to 12.45 - Operators
+12.45 to 1.00  - Recap
+=================================
+
+Why Automation:
+
+-->save time
+-->Accuracy
+-->redundancy/reduce the duplicates
+-->speed 
+-->Resuability
+-->Cost cutting
+-->traceability
+->reduction in man power
+-->Multiple testing at a time
+
+
+Manual+automation
+Introduction to Java
+
+Object Oriented
+Platform Independent-->write once run anywhere
+Simple and robust
+secured
+multi threading
+
+
+IDE-->Integrated Development Environment
+ 
+Create a Project
+ -->right click -->src/main/java-->click new 
+ -->package-->
+ 
+Package->organize the code
+-->starts with lowercase
+-->no spaces
+
+
+To Create a class 
+ rightclick package-->click new-->class
+naming Convention--> PascalNotation
+CarBrand
+
+created a main method-->entry point for execution
+
+
+Class-->blueprint/template for an object->define the structure of object
+
+Class Contains-->Information about object
+			-->action/function of the object
+=========================================================
+
+Primitive and Non Primitive Datatype
+
+Primitive datatype-->
+byte-->-127 to 127
+
+boolean-->true/false
+
+short-->
+int-->
+long
+float
+double
+
+char-->one single character
+
+Variables-->hold the value of a datatype
+
+Instance Variable -->present in class level -->can be accessed with the help of obj/ref
+Local Variable-->present inside any method
+
+Non Primitive Datatype
+======================
+String-->char sequence-->collection of characters--> word -->alphanumeric ,special character
+Vidya barathi.R12
+regno
+TN12 A 2304;
+
+String varName="value";
+Array
+Object-->real time Entity -->state and behaviour
+
+
+
+
+Method -->action/verification
+
+Method signature
+================
+main()-->entry point
+
+public static void main(String[] args);
+
+Accessspecifier returntype methodName(arguments);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tomorrow's Agenda
+Operators/access specifiers
+Control Statements 
+Array
