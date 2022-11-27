@@ -1,0 +1,78 @@
+
+Agenda:
+======
+9 to 9.45am    - Access specifier and Operators
+9.45 to 10.30  - Conditional Statement
+10.30 to 10.45 - classroom
+10.45 to 11.00 - Break
+11.15 to 11.45 - Looping Statement
+11.45 to 12.00 - classroom
+12.00 to 12.45 - Array
+12.45 to 1.00  - classroom
+===========================
+
+Method signature:
+=================
+Access specifier returntype methodName(input arg)
+
+4 types: ex:facebook
+Public-->Name ,feeds,
+Private-->passwords/dob/contact
+Protected-->photos,status
+default/package-->relation 
+
+
+
+Operators
+
+Arithmetic Operation --Math function
++,-,/,*,%-->modulus
+
+Relational Operators/Comparision Operation
+>,<,>=,<=,==,!=
+
+Logical Operators-->boolean
+================
+AND -->two conditions -->both should true-->&&
+OR-->two condition-->anyone is true-->||
+
+Unary Operator:
+============== 
+++ increment--> i++= i=i+1; 5++ ,6
+-- decrement--i--=>i=i-1;5--,4
+===========================================
+
+Control Statements
+==================
+Decision Making Statement/Conditional Statement
+
+if /else or Switch cases
+if block
+if else block
+
+
+
+Looping Statement-->repeated Task until get succeed
+
+for loop
+
+for(user defined input; condition ;condition )
+
+
+ 
+while (condition){
+logic}
+
+
+
+
+do while
+
+
+
+Jump Statement-->stop/skip,-->break and continue
+public -->anyone can access-->all class under the project
+private-->only inside that particular class where it is defined
+protected-->can be accessed by inherited class/child class-->using permission
+default-->other classes can be accessed within the package
+
