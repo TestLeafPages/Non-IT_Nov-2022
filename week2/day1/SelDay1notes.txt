@@ -1,0 +1,56 @@
+Selenium WebDriver
+
+Selenium-->opensource automation framework
+-->UI Automation
+-->Funtional /regression testing/end to end
+-->Can talk to all browsers
+-->can supports multiple languages
+-->can supports multiple OS
+
+
+Selenium 
+Client library--> w3c protocol	--->WebDriver-->		     browser
+languages			API Call		Browser Specific driver
+
+HTTP -request and response
+							request
+click Login	-->		api call--->   ChromeDriver--->ChromeBrowser
+			<----		<---			<---response
+			
+Pre req:
+
+Dependency to work with selenium
+pom-->project object model-->manage project jar files
+
+TO talk with Elements/interact with the elements(WebElements) in the webpage
+
+HTML Script-->DOM ->document object model
+
+Selenium uses locators to find the Element in the webpage
+
+
+8 Locators
+
+Id-->id attribute of the element
+name-->name attribute
+classname-->class attribute
+linktext--> text-->black colour--> tagname with a-->anchor-->text with a tag
+partial linktext-->Partial match of the text-->
+tagname
+xpath
+css->
+
+driver.findElement(By.locator(value));
+
+gettitle-->returntype-->string
+findElement->return Type-->webelement
+
+To handle the dropdown
+======================
+Dom-->element defined with the tagname <select>
+Step:-->find the element
+Select class and pass arg(input) as webelement
+selectbyindex-->accept int -->starts with 0
+selctbyvalue-->use value attribute
+selectbyVisibleText-->blacktext
+
