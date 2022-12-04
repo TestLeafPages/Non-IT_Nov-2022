@@ -1,0 +1,146 @@
+9.00 to 9.15	Recap->Select (drop down)
+9.15 to 10.15   Learning Basic xpath
+10.15 to 10.40  Classroom
+10.45 to 11.00  Break  
+11.00 to 12.15  Advanced xpath
+12.15 to 12.25   Break
+12.25 to 12.45   Classroom
+12.45 to 1.05    Webdriver Methods(few)
+1.05 to 1.15 	Recap       
+
+
+Learning Basic xpath
+=====================
+XPath-->XML path-->Extended Mark up language
+address to the element...>location
+
+when use xpath-->index of xpath starts with 1 --> address[index]
+
+Absolute XPath
+-->long xpath->complete address of the webelement
+-->starts with /
+-->strat from root element->html
+
+/html/body/div[2]/div[2]/div/form/p/input
+
+Relative Xpath:
+===============
+-->starts with //
+
+Syntax:
+//tagname[@attribute='attributeValue']
+-->accepts all attributes
+
+Types of Xpath:
+==============
+Attribute based xpath
+====================
+syntax:
+//tagname[@attribute='attributeValue']
+Example:
+//input[@type='text']
+
+Text based Xpath
+================
+syntax:
+//tagname[text()='textValue']
+Example:
+//label[text()='Username']
+
+Partial Attribute based xpath
+=============================
+syntax:
+//tagname[contains(@attribute,'partialattributeValue')]
+//label[contains(@for,'user')]
+//input[contains(@class,'input')]
+
+Partial Text based xpath
+=========================
+syntax:
+//tagname[contain(text(),'partialvalue')]
+
+example:
+//title[contains(text(),'Leaftaps')]
+
+//a[contains(text(),'SFA')]
+
+
+Collection based Xpath:
+=======================
+syntax:
+(Ralative xpath)[index]
+(//input[contains(@class,'input')])[2]
+
+Recomended use index 5 to 6
+
+invalid Selector exception-->check syntax of the xpath
+
+When there are more matches ex:30 matches-->cannot use collection based 
+When the link text or the attribute with numbers-->cannot use in xpath
+When there no  proper attributes-->xpath
+
+
+Advanced Xpath:
+==============
+Axes xpath/Relationship based xpath
+====================================
+
+Ancestor
+children       
+Parent
+children
+Parent-->Children
+	son       daughter
+  Boy      Boys  Girl  -->sibling 
+  
+boy girl   girl  boys -->cousin
+
+
+Parent to child(one step down)
+===============
+syntax:
+(relative xpath of parent)/ tagname(relative xpath of child)
+example:
+//p[@class='top']/input
+Child to parent
+===============
+syntax:
+(relative xpath of child)/parent::tagname(relative xpath of child)
+example:
+//input[@id='password']/parent::p
+Grandparent to grandchild(two step down)
+=========================
+syntax : 
+(relative xpath of grandParent)//grandChild 
+//form//input
+GrandChild to Grandparent
+=========================
+syntax:
+(relative xpath of grandChild)/ancestor::tagname
+example
+//input[@id='username']/ancestor::form
+Sibling
+Younger to Elder
+==============
+(relative xpath of younger sibling)/preceding-sibling::tagname(realtive xpath of elder)
+Example:
+//input[@id='username']/preceding-sibling::label
+Elder to younger
+================
+syntax:
+(realtive xpath of elder)/following-sibling::tagname((relative xpath of younger sibling))
+//label[@for='username']/following-sibling::input
+Cousin
+Younger to elder:
+================
+syntax:
+(relative xpath of younger sibling)/preceding::tagname
+example:
+//label[@for='password']/preceding::input
+Elder to younger:
+=================
+(relative xpath of elder cousin)/following::tagname
+
+
+
+
