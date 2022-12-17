@@ -1,0 +1,86 @@
+Agenda: Target Locators
+======
+9.00 to 9.50   Alert
+9.50 to 10.10  Classroom
+10.10 to 10.15  5min short break
+10.15 to 11.15  Frame
+11.15 to 11.30	Classroom
+11.30 to 11.45	Break
+11.45 to 12.45  Window handling
+12.45 to 1.00   classroom 	
+
+===============================================
+
+Alert:
+=====
+
+Alerts->message from app
+ -->cannot be inspectable
+ -->cannot be ignored
+ 
+ -->try to ignore it-->execption will be UnhandledAlertException
+  
+ Modal
+   simple alert-->one single option to handle the alert
+   confirmation Alert-->asking to take decision
+   Prompt Alert-->prompting to input into the alert
+         
+ Non modal -Sweet alert
+   -it is inspectable
+   -cannot be ignored
+   -if try to handle as alert-->throws exception as NoAlertPresentException
+ 
+ Frame:
+ =====
+  HTML inside another HTML design
+  DOM inside another DOM
+  <html>
+  <body>
+   <div>
+   <div>
+     <html>
+	 
+	    <html>
+		
+		<html>
+  
+  Window handling
+  ==============
+   Each tab/window opened by application carries unqiue address-window handle
+   -->know address of particular tab/window (window handle)
+     -getWindowHandle();
+	    -->gives the address of the current active window 
+		-->return type String
+    -getWindowHandles();
+     -->holds the address of all opened Windows
+	 -->return type->set
+
+//Switch to second window
+		//step:1--> convert the set to list
+		//use get(index)to switch to child window
+		driver.switchTo().window(windows.get(1));
+
+driver.close();-->close the current active window
+To close all the opened windows
+		driver.quit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_iframe
+
+
+
+
+
+
