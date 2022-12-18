@@ -1,0 +1,62 @@
+Today's Agenda
+==============
+9.00 to 9.20   Browser Notification 
+9.20 to 10.45  WebTable  
+10.45 to 11.10 classroom
+11.10 to 11.25 Break
+11.40 to 12.15 Advanced User Interface
+12.15 to 12.30 classroom
+12.30 to 12.50 SnapShot
+12.50 to 1.00  Recap
+
+============
+WebTable
+===========
+
+ -tabular format to hold the data in rows and columns
+ -static --> even rows and columns 2x2,4,4
+ -dymanic--> 3x4,5x4
+ =================
+ WebTable Structure
+ ==================
+ <table>-->name of the table
+  <thead>-->tabular head
+    <tr>-->table row
+	  <th>-->table header data
+   <tbody>-->tabular body
+     <tr>-->table row
+	   <td>-->table data --></td>
+	   <td>
+	   <td>
+	 </tr>
+	 <tr>
+	   <td>
+	   <td>
+	   <td>
+	  </tr>
+	 <tr>
+ 
+
+==========================
+Advanced User Interaction
+=========================
+  Mouse and Keyboard Action
+   Mouse hover
+    Double click
+  right click
+  hold
+  scroll
+  drag and drop
+ 
+  Keyboard Actions
+  
+  Control+
+  
+  Actions class in Selenium-->builder patterns-->building sequence to actions to perform
+  Step:1 Instantiate the class and pass the driver as arg
+  step:2 apply req the mouse action-->on which webelement
+  
+  
+  
+  
+  
