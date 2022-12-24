@@ -1,0 +1,109 @@
+Today's Agenda
+==============
+9.00 to 9.20   TestNg Introduction
+9.20 to 10.30  Testng Basic Configuration 
+10.30 to 10.50 classroom
+10.50 to 11.30 sequential and parallel execution
+11.30 to 11.50 classroom
+11.50 to 12.05 Break
+12.05 to 12.45 Annotations
+12.50 to 1.10  Classroom
+
+==============================
+TestNg--> Test Next Generation
+
+-framework->unit testing
+-execution framework
+
+=============
+Selenium-4000 testcases
+ not possible to execute multiple scripts
+ no status report
+ time
+ no way to execute multiple test in multiple browser
+ ==============================
+ TestNg->Cedric Beaust
+   inspired with Junit and Nunit
+   
+ Advantages:
+ ============
+ ->allows to execute the multiple testcases sequentially
+ ->allows to execute the multiple testcases parallely
+ -->different browsers-edge,firefox
+ -->in single run
+ -->get the status the execution->Passed/Failed->resultof runningsuite->testng console
+ -->Control the flow of execution-->annotations and attributes
+ -->allows to use multiple set of testdata
+ -->Rerun the failed testcases
+ -->report of the execution->chronological order
+ 
+ ===================
+ Prerequisites
+ -->install testng plugin
+ -->testng dependency
+ 
+ ===
+ Steps to follow to execute as Testng
+ ===========================
+ 1.Make the main method into normal method
+ Converted the main method into a normal method
+ 
+ Annotation--a piece of code /logic return for execution
+ 
+ 2.Added the annotation @Test on top of the method
+ 
+
+To execute the testcases seq/parallely
+<suite name="Suite">-->top most layer-->only one
+//one test-->module-->Regression 
+  <test thread-count="5" name="RegTest">-->multiple module-->leads,Accounts
+    <classes>
+           <class name="testcase.CreateLead"/>
+		    <class name="testcase.DeleteLead"/>
+    </classes>
+  </test> <!-- Test -->
+  //module-->smoke
+   <test thread-count="5" name="smokeTest">-->multiple module-->leads,Accounts
+    <classes>
+           <class name="testcase.CreateLead"/>
+		    <class name="testcase.DeleteLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+Leads  Accounts  Opportunity
+Cl		ca
+dl		dl
+dupl	dup
+
+Verbose->to get the log(information of exception) in the console
+
+
+Run before  the suite
+Run before all the tests
+Run before all the classes
+Run before all the methods
+Understand the hirerchy of annotation
+Run after all the methods
+Run before all the methods
+Understand the hirerchy of annotation of test2
+Run after all the methods
+Run after all the classes
+Run after all the tests
+status
+Run after the suite
+
+Hierearchy of execution
+==========================
+
+@BeforeSuite--> to start cloud server
+	@BeforeTests-->get the files/report /start dbconnection
+		@BeforeClass->testdata
+			@beforeMethod-->precondition-launching
+				@Test
+			@AfterMethod-->postcondition
+		@AfterClass-->stop collection
+	@AfterTests-->close file/close db
+@AfterSuite-->report/close the serverconnection
+
+Xml-->@Before-->@Test-->@After
