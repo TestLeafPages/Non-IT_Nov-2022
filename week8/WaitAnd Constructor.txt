@@ -1,0 +1,86 @@
+Today's Agenda
+==============
+9.00 to 9.45    Selenium Waits
+9.45 to 10.05   classroom
+10.05 to 11.05  Constructor
+11.05 to 11.20  classroom
+11.20 to 11.35  Break
+11.35 to 12.20  Exception Handling
+12.20 to 12.50  POM Introduction
+12.50 to 1.00   Recap
+
+
+Selenium Wait:
+=============
+Implicit Wait-->Global wait-->applicable on findElement/findElements
+
+Thread.sleep(ms)-->java wait-->pause the execution for the given timelimit
+-->explicitly calling wait..
+
+Explicit Wait in Selenium->WebDriverWait-->classroom
+
+Conditional wait
+
+Work on particular condition-->on particular element
+WebDriverWait wait=new WebDriverWait(TU)
+wait.until(ExpectedCondition.ConditionstobeApplied);
+
+==================================
+
+Constructor:
+===========
+
+
+static 
+constructor
+normal method
+
+
+Constructor carry same name as the classname
+constructor does not return anything
+implicitly called while creating a obj
+Common initialzation to be don at the start of the pgm
+
+Method-->carry any name
+-->it can have return type
+-->explicitly called with the help of obj
+
+Default constructor-->no arguments
+parametrized Constructor-->with arguments
+
+this -->java keyword helps to call current class object
+-->resolve the ambiquity between global and local variable
+
+Constructor Chaining-->calling one Constructor from other Constructor
+
+static-->share one single memory
+final-->to create any constant
+this-->call the current class constructor, method, variable
+super-->to call the parent class method
+
+
+Exceptions-->Abnormal Condition which disrupts the execution flow
+
+NoSuchelementException
+UnHandledAlertException
+StaleElementException
+
+Exception handling -->give information user about exception
+error ->which cannot be resolved
+
+RunTimeException ->All selenium Exceptions-->UNchecked Exception
+try
+catch
+finally
+
+-->handled with try- catch block
+-->try always works with catch block
+-->multiple catch block
+
+
+CompileTimeExceptions-->IO Exception, InterruptedException,FileNotFoundException
+  -->checked Exception
+  
+  throw->explicity writing a logic to throw exception -->works inside the method
+  throws-->compile time information by the exception class that the logic may or maynot throw error
+   -->placed at the method level
