@@ -1,0 +1,52 @@
+Today's Agenda
+==============
+POM ->PageObjectModel
+
+FrameWork-->design/collection/outline/protocol/Structure/rules/blueprint
+  -->organized properly
+  -->easy maintenance
+  -->Uniformity
+  -->reduce time
+  -->improves efficiency and Productivity
+  -->reusability
+
+PageObjectModel-->design pattern
+  
+-->organized properly
+  -->easy maintenance
+  -->Uniformity
+  -->reduce time
+  -->improves efficiency and Productivity
+  -->reusability
+  -->connect with external application->excel
+  
+  -->design Pattern for test automation to create an Object repository for all web/UI elements
+  
+  4 Packages
+  1-->common functionality
+  2-->pages
+  3-->testcase
+  4-->utils-->excel script
+  
+Setp:1 -->Create a common class /Baseclass-->to define common functionality
+
+Step:2 -->Create a separate Java class for each page navigation under ->package-pages
+           -->extend all java class with ProjectSpecificMethod
+		   
+Step:3 -->Create methods for each actions and verifications in respective java class
+
+Step:4-->Each method should have a return type based on the landing page
+
+Step:5-->Create class under the package->testcase-->call all the funtionality of Login page
+
+Step:6-->Make your driver static in Project SpecifiMethod
+
+
+Static driver-->sequential possible ->sharing one sing id
+  ->parallel is not possible-->individual id for the excution
+
+Remove static->parallel execution->exception null pointer
+Constructor-->you can resolve the obj initializing
+
+
+
