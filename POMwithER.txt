@@ -1,0 +1,69 @@
+Today's Agenda
+==============
+PageObjectModel with Extent Report
+Framework
+
+ExtentReport-->third party application
+->categorize the report
+->Graphical represtation
+
+
+To integrate the Extent Report with POM
+=======================================
+
+1.Create a method startReport() in ProjectSpecificMethod
+  -->Add first 4 steps of Extentreport (Common steps to create html file 
+  along with actual data)
+  -->annote the method @BeforeSuite
+2.Create a method endReport() in ProjectSpecificMethod
+  ->add the flush() 
+  -->annotate the method with @AfterSuite
+
+3.Create a method to add testcasedetails
+   -->testcase name
+   -->testcase desc
+   -->author
+   -->category
+annotate the method with @BeforeClass
+4. Added the testdeatils in the setFile() (under @BeforeTest)
+
+5.Create a method to report the status of the each testcase
+
+if else to capture the status of the testacese and included the message
+
+6. Create a method takeSnap()->add the screnshot code along with randeom number
+
+7.Create a node to report every data as a different report
+node-->subset of the test
+
+-->testcase name
+   -->testcase desc
+   -->author
+   -->category
+
+
+snap shot and status
+
+//@beforeSuite-->starting the report
+//@BeforeTest-->to set the datafile/details for the testcase to be called
+//@BeforeClass
+//@DataProvider-->read The Excel file
+//@BeforeMethod-->Preconditions
+//@Test-->actual test steps
+
+
+
+0.34354*99-->67.324543-->67
+0
+5.00-->5
+
+
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>3.1.5</version>
+        </dependency>
+		
+		
+		Hybrid frameWork-->Keyword driven testing,DataDriven testing,ExtentReport
